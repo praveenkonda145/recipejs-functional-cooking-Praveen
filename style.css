@@ -1,6 +1,4 @@
-/* ================================
-   Reset and Base Styles
-================================ */
+/* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -14,9 +12,7 @@ body {
     line-height: 1.6;
 }
 
-/* ================================
-   Header
-================================ */
+/* Header */
 header {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
@@ -35,18 +31,37 @@ header p {
     opacity: 0.9;
 }
 
-/* ================================
-   Main Container
-================================ */
+/* Main Container */
 main {
     max-width: 1200px;
     margin: 2rem auto;
     padding: 0 1rem;
 }
 
-/* ================================
-   Recipe Container - Flexbox Grid
-================================ */
+/* 🔹 CONTROLS (PART 2) */
+.controls {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.controls button {
+    padding: 8px 14px;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+    background-color: #eee;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.controls button.active {
+    background-color: #ff7043;
+    color: white;
+}
+
+/* Recipe Container */
 #recipe-container {
     display: flex;
     flex-wrap: wrap;
@@ -54,9 +69,7 @@ main {
     justify-content: center;
 }
 
-/* ================================
-   Recipe Card
-================================ */
+/* Recipe Card */
 .recipe-card {
     background: white;
     border-radius: 12px;
@@ -66,15 +79,11 @@ main {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover Effect */
 .recipe-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 15px rgba(0,0,0,0.2);
 }
 
-/* ================================
-   Recipe Card Content
-================================ */
 .recipe-card h3 {
     color: #667eea;
     font-size: 1.5rem;
@@ -94,9 +103,7 @@ main {
     line-height: 1.5;
 }
 
-/* ================================
-   Difficulty Badges
-================================ */
+/* Difficulty Badges */
 .difficulty {
     padding: 0.25rem 0.75rem;
     border-radius: 20px;
@@ -104,19 +111,16 @@ main {
     font-weight: bold;
 }
 
-/* Easy */
 .difficulty.easy {
     background-color: #d4edda;
     color: #155724;
 }
 
-/* Medium */
 .difficulty.medium {
     background-color: #fff3cd;
     color: #856404;
 }
 
-/* Hard */
 .difficulty.hard {
     background-color: #f8d7da;
     color: #721c24;
